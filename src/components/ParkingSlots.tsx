@@ -1,5 +1,4 @@
 "use client";
-// components/ParkingSlots.js
 import React, { useState } from "react";
 
 const ParkingSlots = () => {
