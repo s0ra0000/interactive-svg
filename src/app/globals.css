@@ -25,3 +25,32 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.maze-explorer {
+  margin: 20px auto;
+  border: 2px solid #000;
+}
+
+/* Style for maze cells */
+.maze-cell {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 1px;
+}
+
+/* Style for walls in the maze */
+.wall {
+  fill: #333;
+}
+
+/* Style for the exit point */
+.exit {
+  fill: #00f;
+}
+
+/* Style for the player character */
+.player {
+  font-size: 20px;
+  fill: #f00;
+  font-weight: bold;
+  z-index:10;
+}
