@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,33 +19,27 @@
 
 body {
   color: rgb(0,0,0);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  background-image: radial-gradient(circle 815px at 23.4% -21.8%, rgba(9, 29, 85, 1) 0.2%, rgba(0, 0, 0, 1) 100.2%);
+  height:full;
+  }
 .maze-explorer {
   margin: 20px auto;
-  border: 2px solid #000;
 }
 
 /* Style for maze cells */
 .maze-cell {
-  fill: #fff;
-  stroke: #000;
-  stroke-width: 1px;
+  fill: transparent;
 }
 
 /* Style for walls in the maze */
 .wall {
-  fill: #333;
+  /* fill: #537FA6; */
+  fill: #6BBEF2;
 }
 
 /* Style for the exit point */
 .exit {
-  fill: #00f;
+  fill: transparent;
 }
 
 /* Style for the player character */
